@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<body>
+<h1 class="display-4"> Create Application </h1>
+
+<form  [formGroup]="ApplicationForm" (ngSubmit)="create()">
+    <br><br>
+    <div class="form-group w-75">
+     <span class="p-float-label">
+            <input class="form-control" formControlName="icone" type="text" id="inputtext" pInputText> 
+            <label for="float-input">Icone</label>
+
+        </span>
+    </div>
+        <br><br>
+        <div class="form-group w-75">
+        <span class="p-float-label">
+            <input class="form-control"formControlName="name" id="float-input" type="text" pInputText> 
+            <label for="float-input">Name</label>
+        </span>
+    </div>
+        <br><br>
+        <div class="form-group w-75">
+        <span class="p-float-label">
+            <input class="form-control" formControlName="description" id="float-input" type="text" pInputText> 
+            <label for="float-input">Description</label>
+        </span>
+        </div>
+        <br><br>
+        <div class="form-group w-75">
+        <span class="p-float-label">
+            <input class="form-control"formControlName="url" id="float-input" type="text" pInputText> 
+            <label for="float-input">Url</label>
+        </span>
+        </div>
+        <br><br>
+        <div class="form-group w-75">
+        <span class="p-float-label">
+            <input class="form-control"formControlName="owner" id="float-input" type="text" pInputText> 
+            <label for="float-input">Owner</label>
+        </span>
+        </div>
+        <br><br>
+        <div class="form-group w-75">
+        <span class="p-float-label">
+            <input class="form-control"formControlName="status" id="float-input" type="text" pInputText> 
+            <label for="float-input">Status</label>
+        </span>
+        </div>
+        <br><br>
+
+        <!--<div class="field col-12 md:col-4">
+            <p-calendar [(ngModel)]="date3" [showIcon]="true" inputId="icon"></p-calendar>
+        </div>-->
+        <div class="form-group w-75">
+               <span class="p-float-label">
+            <input class="form-control"formControlName="date" id="float-input" type="date" pInputText> 
+        </span>
+    </div>
+        <br><br>
+        <div class="form-group w-75">
+        <span class="p-float-label">
+            <input  class="form-control"formControlName="version"id="float-input" type="text" pInputText> 
+            <label for="float-input">Version</label>
+        </span>
+        </div>
+        <br><br>
+        <div class="form-group w-75">
+        <button pButton type="submit" class="p-button-raised p-button-rounded">Save</button>
+        </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<h1 class="display-4"> Update Menu </h1>
+
+<form [formGroup]="UpdateMenuForm" (ngSubmit)="update()">
+    <br><br>
+    <div class="form-group w-75">
+    <span class="p-float-label">
+           <input class="form-control"formControlName="title" type="text" id="inputtext" pInputText> 
+           <label for="inputtext">Title</label>
+       </span>
+       </div>
+       <br><br>
+
+       <div class="form-group w-75">
+       <span class="p-float-label">
+           <input class="form-control"formControlName="description" id="float-input" type="text" pInputText> 
+           <label for="float-input">Description</label>
+       </span>
+    </div>
+    <br><br>
+
+    <div class="form-group w-75">       
+        <span class="p-float-label">
+           <input class="form-control"formControlName="parent" id="float-input" type="text" pInputText> 
+           <label for="float-input">Parent</label>
+       </span>
+       </div>
+       <br><br>
+
+       <div class="form-group w-75">
+       <span class="p-float-label">
+           <input class="form-control"class="form-control" formControlName="url" id="float-input" type="text" pInputText> 
+           <label for="float-input">Url</label>
+       </span>
+    </div>
+    <br><br>
+
+    <div class="form-group w-75">
+       <span class="p-float-label">
+           <input class="form-control"formControlName="isactive" id="float-input" type="text" pInputText> 
+           <label for="float-input">IsActive</label>
+       </span>
+    </div>
+    <br><br>
+
+    <div class="form-group w-75">
+       <span class="p-float-label">
+           <input class="form-control"formControlName="applicationid" id="float-input" type="text" pInputText> 
+           <label for="float-input">ApplicationId</label>
+       </span>
+      </div>
+      <br><br>
+
+       <button pButton type="submit" class="p-button-raised p-button-rounded">Save changes</button>
+</form>
